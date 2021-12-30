@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  /* justify-content: center; */
+
+  width: 100%;
+  position: fixed;
+  margin: 1rem auto 0 auto;
+}
+img {
+  width: 3rem;
+}
+a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 20px;
+  transition: all 0.4s;
+  margin: 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, 0.253);
+}
+ul {
+  list-style: none;
+}
+.menu ul {
+  display: flex;
+}
+.acc ul {
+  display: flex;
+}
+
+section {
+  min-height: 100vh;
+
+  scroll-snap-align: start;
+}
+
+.section-1 {
+  background: url(img/model-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-2 {
+  background: url(img/moadel-s.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-3 {
+  background: url(img/model-x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-4 {
+  background: url(img/model-y.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* //////////////////////////////////////// */
+.text_box {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.active {
+  background-color: black;
+}
